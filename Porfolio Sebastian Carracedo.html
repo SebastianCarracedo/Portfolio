@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Sebastian Carracedo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #2c2c2c; color: #f5f5f5; }
+    header { background: #111; color: #fff; padding: 15px; position: sticky; top: 0; }
+    nav ul { list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+    section { padding: 60px 20px; text-align: center; }
+    #presentacion img { width: 150px; border-radius: 50%; margin-bottom: 15px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { border: 1px solid #444; border-radius: 10px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.5); background: #3a3a3a; text-align: left; color: #f5f5f5; }
+    .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; text-align: left; }
+    .skill-item { display: flex; align-items: center; gap: 10px; padding: 10px; border-radius: 8px; background: #2c2c2c; }
+    .redes a { margin: 0 10px; text-decoration: none; font-size: 20px; color: #f5f5f5; }
+    form { max-width: 400px; margin: auto; display: flex; flex-direction: column; }
+    form input, form textarea { margin: 10px 0; padding: 10px; border: 1px solid #555; border-radius: 5px; background: #2c2c2c; color: #fff; }
+    form button { padding: 10px; border: none; background: #111; color: white; cursor: pointer; border-radius: 5px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="#presentacion">Inicio</a></li>
+      <li><a href="#info">Información</a></li>
+      <li><a href="#conocimientos">Conocimientos</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#educacion">Educación</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#redes">Redes</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="presentacion">
+  <img src="https://avatars.githubusercontent.com/u/230784686?v=4" alt="Foto de perfil">
+  <h1>Sebastian Carracedo</h1>
+  <p>Técnico de sistemas | Estudiante de Tecnicatura en Programación</p>
+</section>
+
+<section id="info">
+  <h2>Información General</h2>
+  <div class="grid">
+    <div class="card">
+      <p>Soy un estudiante entusiasta y motivado en busca de oportunidades para desarrollarme profesionalmente y adquirir experiencia valiosa. Me apasiona aprender y crecer, y estoy seguro de que puedo contribuir positivamente en cualquier equipo.</p>
+    </div>
+  </div>
+</section>
+
+<section id="conocimientos">
+  <h2>Conocimientos</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="skills">
+        <div class="skill-item">🖥️ Armado y configuración de PC</div>
+        <div class="skill-item">🛠️ Diagnóstico y reparación de hardware</div>
+        <div class="skill-item">⚙️ Instalación de sistemas operativos y software</div>
+        <div class="skill-item">💾 Gestión y mantenimiento de PC</div>
+        <div class="skill-item">🔧 Resolución de problemas técnicos</div>
+        <div class="skill-item">💻 Lenguajes: C++, Python, Javascript</div>
+        <div class="skill-item">🎨 Adobe Premiere, Photoshop</div>
+        <div class="skill-item">📊 Excel y Word</div>
+        <div class="skill-item">🌎 Inglés B1, Portugués básico</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experiencia">
+  <h2>Experiencia</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Técnico de sistemas</h3>
+      <p><strong>C&E Construcciones S.A.</strong> · Jornada completa</p>
+      <p>Sept. 2024 - Actualidad</p>
+      <p>Rincón de Milberg, Buenos Aires · Presencial</p>
+    </div>
+    <div class="card">
+      <h3>Auxiliar de logística y atención al cliente</h3>
+      <p><strong>Mueblería Santa María</strong> | 2020 - Presente</p>
+    </div>
+    <div class="card">
+      <h3>Auxiliar administrativo</h3>
+      <p><strong>Supermercado Carupa</strong> | Ago. 2022 - Nov. 2022</p>
+    </div>
+    <div class="card">
+      <h3>Prácticas en laboratorio tecnológico</h3>
+      <p><strong>UTN Pacheco LABTEC</strong> | Ago. 2023 - Feb. 2024</p>
+    </div>
+  </div>
+</section>
+
+<section id="educacion">
+  <h2>Educación</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Tecnicatura en Programación</h3>
+      <p><strong>Universidad Tecnológica Nacional</strong> | 2022 - Presente</p>
+    </div>
+    <div class="card">
+      <h3>Bachiller en Economía y Administración de Empresas</h3>
+      <p><strong>Colegio San Martín de Tours</strong> | Finalización 2021 · Promedio 8.5/10</p>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos">
+  <h2>Proyectos</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Gran Cerdo</h3>
+      <p>Juego de turnos en el cual competís contra otros "cerdos" y el objetivo es conseguir la mayor cantidad de trufas.</p>
+      <a href="#">Ver más</a>
+    </div>
+    <div class="card">
+      <h3>Goleadores</h3>
+      <p>Programa destinado a guardar y archivar goles en un torneo de fútbol.</p>
+      <a href="#">Ver más</a>
+    </div>
+    <div class="card">
+      <h3>Catálogo</h3>
+      <p>Programa de base de datos para tener un recuento de productos en un negocio, desarrollado como aplicación de escritorio en C#.</p>
+      <a href="#">Ver más</a>
+    </div>
+  </div>
+</section>
+
+<section id="redes">
+  <h2>Redes</h2>
+  <div class="grid">
+    <div class="card" style="text-align:center;">
+      <a href="mailto:sebascarracedo@gmail.com">📧 Email</a>
+      <a href="tel:+541130520510">📞 Teléfono</a>
+      <a href="https://www.linkedin.com/in/sebastian-carracedo-293440231/" target="_blank">💼 LinkedIn</a>
+      <a href="https://github.com/SebastianCarracedo" target="_blank">🐙 GitHub</a>
+      <a href="https://www.instagram.com/sebas_carra/" target="_blank">📸 Instagram</a>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <div class="grid">
+    <div class="card">
+      <form id="formContacto">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <textarea rows="5" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="mensaje"></p>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.getElementById("formContacto").addEventListener("submit", function(e){
+    e.preventDefault();
+    document.getElementById("mensaje").textContent = "✅ Gracias por tu mensaje. Me contactaré pronto.";
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
